@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- FavIcon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Tienda</title>
+
+    <meta name="author" content="Leonardo Muñoz - Johnny Casanova">
+    <meta name="description" content="Tienda Online - Proyecto Desarrollo de Aplicaciones Web">
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="blue">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">E-Tienda</a>
+                <ul class="right">
+                    <li><a href="">Menu Principal</a></li>
+                    <li><a href="">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container section">
+
+        <a href="#" class="sidenav-trigger" data-target="menu-side">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="sidenav blue" id="menu-side">
+            <li>
+                <div class="user-view">
+                    <!-- <div class="background">
+                        <img src="img/add.jpg" class="responsive-img" alt="">
+
+                    </div> -->
+                    <a href="#">
+                        <img src="img/admin.jpg" alt="" class="circle center-align">
+                    </a>
+                    <a href="">
+                        <span class="name white-text center-align">admin</span>
+                    </a>
+                    <a href="">
+                        <span class="email white-text center-align">admin@gmail.com</span>
+                    </a>
+
+                </div>
+            </li>
+            <!-- CATEGORIAS -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Categorias <i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Añadir<i class="material-icons green-text">add_circle</i></a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Actualizar<i class="material-icons blue-text">refresh</i></a>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Eliminar<i class="material-icons red-text">delete</i></a>
+                            </ul>
+                        </div>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+            </li>
+            <!-- PRODUCTOS -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Productos <i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Añadir<i class="material-icons green-text">add_circle</i></a>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Actualizar<i class="material-icons blue-text">refresh</i></a>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Eliminar<i class="material-icons red-text">delete</i></a>
+                            </ul>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Usuarios <i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Añadir<i class="material-icons green-text">add_circle</i></a>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Actualizar<i class="material-icons blue-text">refresh</i></a>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Eliminar<i class="material-icons red-text">delete</i></a>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Listar<i class="material-icons dark-text">list</i></a>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+
+                </ul>
+            </li>
+            </li>
+        </ul>
+        </li>
+        </ul>
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js">
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>
