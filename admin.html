@@ -10,7 +10,7 @@
     <link href="img/favicon.ico" rel="icon">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Tienda</title>
+    <title>E-Tienda - Admin</title>
 
     <meta name="author" content="Leonardo Muñoz - Johnny Casanova">
     <meta name="description" content="Tienda Online - Proyecto Desarrollo de Aplicaciones Web">
@@ -22,20 +22,166 @@
         <nav class="blue">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo center">E-Tienda</a>
+                <a href="#" data-target="menu-side" class="button-collapse show-on-large sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
                 <ul class="right">
-                    <li><a href="">Menu Principal</a></li>
+                    <li><a href="index.html" target="_blank">
+                            <i class="material-icons white-text">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </li>
                     <li><a href="">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </nav>
     </div>
+    <div class="container section" style="padding-top: 70px;"></div>
+    <!-- TODO: Card de Productos -->
+    <div class="row ">
+        <div class="container">
+        <div class="col s12">
+            <div class="row">
+
+                <button class=" btn blue white-text right pulse">Agregar producto</button>
+                <!-- <h4 class="">Productos </h4> -->
+            </div>
+            <div class="card  z-depth-3">
+                <table class="centered responsive-table highlight">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Stock Minimo</th>
+                            <th>Categoría</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+
+                            <td class="disabled">18164</td>
+                            <td>Canon Powershot SX60 HS</td>
+                            <td>Zoom optico 65x (21-1365mm) \n Sensor CMOS de 16.0 Megapíxeles \n Estabilizador Óptico
+                                de
+                                Imagen</td>
+                            <td>$329.990</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>F1</td>
+                            <td><i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></td>
+                            <td><i class="material-icons btn-floating red white-text">
+                                    delete_outline
+                                </i></td>
+                        </tr>
+                        <tr>
+
+                            <td>26480</td>
+                            <td>Panasonic Lumix FZ70</td>
+                            <td>LUMIX DMC-FZ70 con el zoom optico e inteligente, lente ultra gran angular de 20 mm</td>
+                            <td>$134.990</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>F1</td>
+                            <td><i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></td>
+                            <td><i class="material-icons btn-floating red white-text">
+                                    delete_outline
+                                </i></td>
+                        </tr>
+                        <tr>
+
+                            <td>26763</td>
+                            <td>Tablet Lenovo TAB7</td>
+                            <td>Color: Negro, os: Android Nougat 7.0 procesador: MT8167D QC 1.3GHZ 64BIT\nNucleos: Quad
+                                Core</td>
+                            <td>$59.990</td>
+                            <td>28</td>
+                            <td>10</td>
+                            <td>C1</td>
+                            <td><i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></td>
+                            <td><i class="material-icons btn-floating red white-text">
+                                    delete_outline
+                                </i></td>
+                        </tr>
+                        <tr>
+                            <!-- (, '', ' ', , , , '') -->
+                            <td>27357</td>
+                            <td>HP® Notebook Gamer Pavilion15</td>
+                            <td>HP Notebook Gamer Pavilion15-cb003la Intel i5-7300HQ 8GB 1TB 15" Full HD GTX 1050Ti 4GB
+                            </td>
+                            <td>$566.990</td>
+                            <td>50</td>
+                            <td>5</td>
+                            <td>C1</td>
+                            <td><i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></td>
+                            <td><i class="material-icons btn-floating red white-text">
+                                    delete_outline
+                                </i></td>
+                        </tr>
+                        <tr>
+                            
+                            <td>28206</td>
+                            <td>Element Audífono Gamer G350</td>
+                            <td>Marca: Element Modelo: G350\r\nColor: Negro/verde Tipo de audífono: Headset</td>
+                            <td>$18.990</td>
+                            <td>2</td>
+                            <td>15</td>
+                            <td>A1</td>
+                            <td><i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></td>
+                            <td><i class="material-icons btn-floating red white-text">
+                                    delete_outline
+                                </i></td>
+                        </tr>
+                        <tr>
+                            <!-- (, '', ' ', , , , '') -->
+                            <td>28250</td>
+                            <td>Smartphone Alcatel U5</td>
+                            <td>Smartphone Alcatel U5 Quad Core 8GB 5" Android Negro</td>
+                            <td>$42.990</td>
+                            <td>14</td>
+                            <td>5</td>
+                            <td>T1</td>
+                            <td><i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></td>
+                            <td><i class="material-icons btn-floating red white-text">
+                                    delete_outline
+                                </i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class=""></div>
+    </div>
+    </div>
+    <!-- TODO: Card de Categorias -->
+
+    <!-- TODO: Card de Usuarios -->
+
+
 
     <div class="container section">
 
-        <a href="#" class="sidenav-trigger" data-target="menu-side">
-            <i class="material-icons">menu</i>
-        </a>
+
         <ul class="sidenav blue" id="menu-side">
+
             <li>
                 <div class="user-view">
                     <!-- <div class="background">

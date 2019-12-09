@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- FavIcon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Tienda - Audio</title>
+
+    <meta name="author" content="Leonardo Muñoz - Johnny Casanova">
+    <meta name="description" content="Tienda Online - Proyecto Desarrollo de Aplicaciones Web">
+</head>
+
+<body>
+    <div class="grey lighten-5">
+        <header>
+            <!-- NavBar -->
+            <nav class="nav-wrapper blue darken-2 sticky-nav">
+
+                <a href="index.html" class="brand-logo">E-Tienda</a>
+                <ul class="right">
+                    <li>
+                        <a class="dropdown-trigger" href="#!" data-activates="notification">
+                            <i class="material-icons white-text notif">shopping_cart</i>
+                            <small class="notification-badge">1</small>
+                        </a>
+                    </li>
+
+                    <li><a class="modal-trigger" href="#modallogin">Iniciar Sesión</a></li>
+
+                </ul>
+                <ul id="nav-mobile" class="right">
+                    <li><a href="audio.html">AUDIO</a></li>
+                    <li><a href="computadores.html">COMPUTADORES</a></li>
+                    <li><a href="fotografia-video.html">FOTOGRAFIA-VIDEO</a></li>
+                    <li><a href="telefonia.html">TELEFONIA</a></li>
+                    <li><a href="#"> <br></a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+
+
+
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer blue darken-2">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright Leonardo Muñoz - Johnny Casanova
+
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+
+    <!-- Modal Login -->
+    <div id="modallogin" class="modal">
+        <div class="modal-content">
+            <div class="col s12">
+                <a class="modal-close right"><i class="material-icons">close</i></a>
+            </div>
+            <h4 class="center-align">Iniciar Sesión </h4>
+
+            <div class="row ">
+                <div class="col s2"></div>
+                <form class="col s8">
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="email" name="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <a class="waves-effect waves-light blue btn z-depth-2 center col s6 offset-s3"
+                            name="iniciarsesion" id="iniciarsesion" type="submit" href="#">Iniciar
+                            Sesión</a> <br> <br>
+                        <p class="center-align"><a href="#" class="col s6 offset-s3 section">¿Olvido su contraseña?</a>
+                        </p> <br>
+                        <p class="center-align"><a href="registro.html"
+                                class="col s6 offset-s3 section modal-trigger">Registrarse</a> </p>
+                    </div>
+                </form>
+                <div class="col s2"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Icono Top Fixeado -->
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large blue" href="#">
+            <i class="material-icons">expand_less</i>
+        </a>
+
+    </div>
+
+
+
+    <!-- Modal Producto -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12">
+                    <a class="modal-close right"><i class="material-icons">close</i></a>
+                </div>
+                <div class="col m6">
+                    <br>
+                    <br>
+
+                    <img class="responsive-img materialboxed" data-caption="Nombre del producto" src="img/sample-1.jpg">
+
+
+                </div>
+                <div class="col m6">
+                    <p>Categoria</p>
+                    <h4>Nombre Producto</h4>
+                    <p>Stock: <span class="green-text">36</span></p>
+
+                    <hr class="m6">
+                    <!--  -->
+                    <p>Detalle</p>
+                    <p>-detalle1</p>
+                    <p>-detalle2</p>
+                    <p>-detalle3</p>
+                    <h5>$5.000 <span class="grey-text" style="text-decoration: line-through">$7.000</span> </h5>
+                    <a class="waves-effect waves-light blue btn z-depth-2 pulse" href="#!">Agregar al carrito</a>
+                    <a class="waves-effect waves-light green btn z-depth-2" href="#!">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        //carrousel
+        $(document).ready(function () {
+            $('.carousel').carousel({ dist: 0 });
+            window.setInterval(function () { $('.carousel').carousel('next') }, 5000)
+        });
+        //img boxed
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+        });
+        //modal
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+        //contador de caracteres
+        $(document).ready(function () {
+            $('input#input_text, textarea#textarea2').characterCounter();
+        });
+        //Scroll
+        $(document).ready(function () {
+
+            $('.fixed-action-btn').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.fixed-action-btn').slideDown(300);
+                } else {
+                    $('.fixed-action-btn').slideUp(300);
+                }
+            });
+
+        });
+
+        //Slider
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+
+        document.getElementById('iniciarsesion').addEventListener('click', function () {
+            var email = String(document.getElementById('email').value);
+            var pass = String(document.getElementById('password').value);
+
+            if (email === 'susana@tecmarket.cl' && password === '555') {
+                window.open('admin.html', '_blank');
+            } else {
+                window.location.reload(false);
+
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
