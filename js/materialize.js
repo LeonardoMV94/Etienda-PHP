@@ -4,6 +4,7 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 function login() {
+  /* TODO: LOGIN revisar validacion de input */
   var email = String(document.getElementById('email').value);
   var pass = String(document.getElementById('password').value);
   if (pass == '' || email == '') {
@@ -21,7 +22,7 @@ function login() {
 };
 
 function registrar(){
-/* TODO: Registro validacion de inputs */
+/* TODO: REGISTRO validacion de inputs */
 
 };
 
