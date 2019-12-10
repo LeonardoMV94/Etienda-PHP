@@ -38,144 +38,473 @@
         </nav>
     </div>
     <div class="container section" style="padding-top: 70px;"></div>
-    <!-- TODO: Card de Productos -->
-    <div class="row ">
+    <!-- TODO: LISTO Card de Productos -->
+    <div class="row " id="productos" style="display: none;">
         <div class="container">
-        <div class="col s12">
-            <div class="row">
+            <div class="col s12">
+                <div class="row">
 
-                <button class=" btn blue white-text right pulse">Agregar producto</button>
-                <!-- <h4 class="">Productos </h4> -->
+                    <a class=" btn blue white-text right pulse modal-trigger" href="#modalagregarproducto">Agregar
+                        producto</a>
+                    <!-- <h4 class="">Productos </h4> -->
+                </div>
+                <div class="card  z-depth-3">
+                    <table class="centered responsive-table highlight">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Stock Minimo</th>
+                                <th>Categoría</th>
+                                <th>Editar</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+
+                                <td class="disabled">18164</td>
+                                <td>Canon Powershot SX60 HS</td>
+                                <td>Zoom optico 65x (21-1365mm) \n Sensor CMOS de 16.0 Megapíxeles \n Estabilizador
+                                    Óptico
+                                    de
+                                    Imagen</td>
+                                <td>$329.990</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>F1</td>
+                                <td> <a class="modal-trigger" href="#modaleditarproducto"><i
+                                            class="material-icons btn-floating blue white-text">
+                                            edit
+                                        </i></a> </td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+
+                                <td>26480</td>
+                                <td>Panasonic Lumix FZ70</td>
+                                <td>LUMIX DMC-FZ70 con el zoom optico e inteligente, lente ultra gran angular de 20 mm
+                                </td>
+                                <td>$134.990</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>F1</td>
+                                <td> <a class="modal-trigger" href="#modaleditarproducto"><i
+                                            class="material-icons btn-floating blue white-text">
+                                            edit
+                                        </i></a> </td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+
+                                <td>26763</td>
+                                <td>Tablet Lenovo TAB7</td>
+                                <td>Color: Negro, os: Android Nougat 7.0 procesador: MT8167D QC 1.3GHZ 64BIT\nNucleos:
+                                    Quad
+                                    Core</td>
+                                <td>$59.990</td>
+                                <td>28</td>
+                                <td>10</td>
+                                <td>C1</td>
+                                <td> <a class="modal-trigger" href="#modaleditarproducto"><i
+                                            class="material-icons btn-floating blue white-text">
+                                            edit
+                                        </i></a> </td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+                                <!-- (, '', ' ', , , , '') -->
+                                <td>27357</td>
+                                <td>HP® Notebook Gamer Pavilion15</td>
+                                <td>HP Notebook Gamer Pavilion15-cb003la Intel i5-7300HQ 8GB 1TB 15" Full HD GTX 1050Ti
+                                    4GB
+                                </td>
+                                <td>$566.990</td>
+                                <td>50</td>
+                                <td>5</td>
+                                <td>C1</td>
+                                <td> <a class="modal-trigger" href="#modaleditarproducto"><i
+                                            class="material-icons btn-floating blue white-text">
+                                            edit
+                                        </i></a> </td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+
+                                <td>28206</td>
+                                <td>Element Audífono Gamer G350</td>
+                                <td>Marca: Element Modelo: G350\r\nColor: Negro/verde Tipo de audífono: Headset</td>
+                                <td>$18.990</td>
+                                <td>2</td>
+                                <td>15</td>
+                                <td>A1</td>
+                                <td> <a class="modal-trigger" href="#modaleditarproducto"><i
+                                            class="material-icons btn-floating blue white-text">
+                                            edit
+                                        </i></a> </td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+
+                                <td>28250</td>
+                                <td>Smartphone Alcatel U5</td>
+                                <td>Smartphone Alcatel U5 Quad Core 8GB 5" Android Negro</td>
+                                <td>$42.990</td>
+                                <td>14</td>
+                                <td>5</td>
+                                <td>T1</td>
+                                <td> <a class="modal-trigger" href="#modaleditarproducto"><i
+                                            class="material-icons btn-floating blue white-text">
+                                            edit
+                                        </i></a> </td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="card  z-depth-3">
-                <table class="centered responsive-table highlight">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Descripcion</th>
-                            <th>Precio</th>
-                            <th>Stock</th>
-                            <th>Stock Minimo</th>
-                            <th>Categoría</th>
-                            <th>Editar</th>
-                            <th>Eliminar</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-
-                            <td class="disabled">18164</td>
-                            <td>Canon Powershot SX60 HS</td>
-                            <td>Zoom optico 65x (21-1365mm) \n Sensor CMOS de 16.0 Megapíxeles \n Estabilizador Óptico
-                                de
-                                Imagen</td>
-                            <td>$329.990</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>F1</td>
-                            <td><i class="material-icons btn-floating blue white-text">
-                                    edit
-                                </i></td>
-                            <td><i class="material-icons btn-floating red white-text">
-                                    delete_outline
-                                </i></td>
-                        </tr>
-                        <tr>
-
-                            <td>26480</td>
-                            <td>Panasonic Lumix FZ70</td>
-                            <td>LUMIX DMC-FZ70 con el zoom optico e inteligente, lente ultra gran angular de 20 mm</td>
-                            <td>$134.990</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td>F1</td>
-                            <td><i class="material-icons btn-floating blue white-text">
-                                    edit
-                                </i></td>
-                            <td><i class="material-icons btn-floating red white-text">
-                                    delete_outline
-                                </i></td>
-                        </tr>
-                        <tr>
-
-                            <td>26763</td>
-                            <td>Tablet Lenovo TAB7</td>
-                            <td>Color: Negro, os: Android Nougat 7.0 procesador: MT8167D QC 1.3GHZ 64BIT\nNucleos: Quad
-                                Core</td>
-                            <td>$59.990</td>
-                            <td>28</td>
-                            <td>10</td>
-                            <td>C1</td>
-                            <td><i class="material-icons btn-floating blue white-text">
-                                    edit
-                                </i></td>
-                            <td><i class="material-icons btn-floating red white-text">
-                                    delete_outline
-                                </i></td>
-                        </tr>
-                        <tr>
-                            <!-- (, '', ' ', , , , '') -->
-                            <td>27357</td>
-                            <td>HP® Notebook Gamer Pavilion15</td>
-                            <td>HP Notebook Gamer Pavilion15-cb003la Intel i5-7300HQ 8GB 1TB 15" Full HD GTX 1050Ti 4GB
-                            </td>
-                            <td>$566.990</td>
-                            <td>50</td>
-                            <td>5</td>
-                            <td>C1</td>
-                            <td><i class="material-icons btn-floating blue white-text">
-                                    edit
-                                </i></td>
-                            <td><i class="material-icons btn-floating red white-text">
-                                    delete_outline
-                                </i></td>
-                        </tr>
-                        <tr>
-                            
-                            <td>28206</td>
-                            <td>Element Audífono Gamer G350</td>
-                            <td>Marca: Element Modelo: G350\r\nColor: Negro/verde Tipo de audífono: Headset</td>
-                            <td>$18.990</td>
-                            <td>2</td>
-                            <td>15</td>
-                            <td>A1</td>
-                            <td><i class="material-icons btn-floating blue white-text">
-                                    edit
-                                </i></td>
-                            <td><i class="material-icons btn-floating red white-text">
-                                    delete_outline
-                                </i></td>
-                        </tr>
-                        <tr>
-                            <!-- (, '', ' ', , , , '') -->
-                            <td>28250</td>
-                            <td>Smartphone Alcatel U5</td>
-                            <td>Smartphone Alcatel U5 Quad Core 8GB 5" Android Negro</td>
-                            <td>$42.990</td>
-                            <td>14</td>
-                            <td>5</td>
-                            <td>T1</td>
-                            <td><i class="material-icons btn-floating blue white-text">
-                                    edit
-                                </i></td>
-                            <td><i class="material-icons btn-floating red white-text">
-                                    delete_outline
-                                </i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class=""></div>
         </div>
-        <div class=""></div>
     </div>
+    <!-- TODO: LISTO agregar modal de agregar producto -->
+    <div id="modalagregarproducto" class="modal">
+        <div class="modal-content">
+            <div class="col s12">
+                <a class="modal-close right"><i class="material-icons">close</i></a>
+            </div>
+            <h4 class="center-align">Agregar producto </h4>
+
+            <div class="row ">
+                <div class="col s2"></div>
+                <form class="col s8">
+                    <div class="input-field">
+
+                        <input id="idproducto" name="idproducto" type="number" class="validate" disabled>
+                        <label for="idproducto">ID</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+
+                    <div class="input-field">
+
+                        <input id="nombreprod" type="text" class="validate" name="nombreprod">
+                        <label for="nombreprod">Nombre Producto</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="descripcionprod" type="text" class="validate" name="descripcionprod">
+                        <label for="descripcionprod">Descripcion</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="precioprod" type="number" class="validate" name="precioprod">
+                        <label for="precioprod">Precio</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="stockprod" type="number" class="validate" name="stockprod">
+                        <label for="stockprod">Stock</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="stockminprod" type="number" class="validate" name="stockminprod">
+                        <label for="stockminprod">Stock Minimo</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+                        <select>
+                            <option value="" disabled selected>Escoja categoria</option>
+                            <option value="1">AUDIO</option>
+                            <option value="2">COMPUTADORES</option>
+                            <option value="3">FOTOGRAFIA-VIDEO</option>
+                            <option value="3">TELEFONIA</option>
+                        </select>
+                        <label>Categoria de producto</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <a class="waves-effect waves-light blue btn z-depth-2 center col s6 offset-s3"
+                            name="agregarproducto" id="agregarproducto" type="submit"
+                            onclick="agregarProducto()">Agregar</a> <br> <br>
+
+                    </div>
+                </form>
+                <div class="col s2"></div>
+            </div>
+
+        </div>
     </div>
-    <!-- TODO: Card de Categorias -->
-
-    <!-- TODO: Card de Usuarios -->
 
 
+    <!-- TODO: LISTO agregar modal para editar producto -->
+    <div id="modaleditarproducto" class="modal">
+        <div class="modal-content">
+            <div class="col s12">
+                <a class="modal-close right"><i class="material-icons">close</i></a>
+            </div>
+            <h4 class="center-align">Editar producto </h4>
+
+            <div class="row ">
+                <div class="col s2"></div>
+                <form class="col s8">
+                    <div class="input-field">
+
+                        <input id="idproducto" name="idproducto" type="number" class="validate" disabled>
+                        <label for="idproducto">ID</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+
+                    <div class="input-field">
+
+                        <input id="nombreprod" type="text" class="validate" name="nombreprod">
+                        <label for="nombreprod">Nombre Producto</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="descripcionprod" type="text" class="validate" name="descripcionprod">
+                        <label for="descripcionprod">Descripcion</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="precioprod" type="number" class="validate" name="precioprod">
+                        <label for="precioprod">Precio</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="stockprod" type="number" class="validate" name="stockprod">
+                        <label for="stockprod">Stock</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="stockminprod" type="number" class="validate" name="stockminprod">
+                        <label for="stockminprod">Stock Minimo</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+                        <select>
+                            <option value="" disabled selected>Escoja categoria</option>
+                            <option value="1">AUDIO</option>
+                            <option value="2">COMPUTADORES</option>
+                            <option value="3">FOTOGRAFIA-VIDEO</option>
+                            <option value="3">TELEFONIA</option>
+                        </select>
+                        <label>Categoria de producto</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <a class="waves-effect waves-light blue btn z-depth-2 center col s6 offset-s3"
+                            name="agregarproducto" id="agregarproducto" type="submit"
+                            onclick="editarProducto()">Editar</a> <br> <br>
+
+                    </div>
+                </form>
+                <div class="col s2"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- TODO: LISTO Card de Categorias -->
+    <div class="row " id="categorias" style="display: none;">
+        <div class="container">
+            <div class="col s12">
+                <div class="row">
+
+                    <a class=" btn blue white-text right pulse modal-trigger" href="#modalagregarcategoria">Agregar
+                        Categoria</a>
+                    <!-- <h4 class="">Productos </h4> -->
+                </div>
+                <div class="card  z-depth-3">
+                    <table class="centered responsive-table highlight">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Categoria</th>
+                                <th>Descripcion</th>
+                                <th>Editar</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                               
+                                <td class="disabled">A1</td>
+                                <td>AUDIO</td>
+                                <td>Equipos de música, audífonos, dispositivos portátiles\r\n</td>
+                                <td> <a href="#modaleditarcategoria" class="modal-trigger"> <i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></a></td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+
+                                <td>C1</td>
+                                <td>COMPUTADORES</td>
+                                <td>notebook,desktop, tablets,accesorios</td>
+                                <td> <a href="#modaleditarcategoria" class="modal-trigger"> <i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></a></td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+
+                                <td>F1</td>
+                                <td>FOTOGRAFIA-VIDEO</td>
+                                <td>camaras compactas, profesionales, drones, accesorios</td>
+
+                                <td> <a href="#modaleditarcategoria" class="modal-trigger"> <i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></a></td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+                            <tr>
+
+                                <td>T1</td>
+                                <td>TELEFONIA</td>
+                                <td>celulares básicos, smartphone, accesorios</td>
+
+                                <td> <a href="#modaleditarcategoria" class="modal-trigger"> <i class="material-icons btn-floating blue white-text">
+                                    edit
+                                </i></a></td>
+                                <td><i class="material-icons btn-floating red white-text">
+                                        delete_outline
+                                    </i></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class=""></div>
+        </div>
+    </div>
+    <!-- TODO: LISTO agregar modal para agregar categoria -->
+    <div id="modalagregarcategoria" class="modal">
+        <div class="modal-content">
+            <div class="col s12">
+                <a class="modal-close right"><i class="material-icons">close</i></a>
+            </div>
+            <h4 class="center-align">Agregar Categoria </h4>
+
+            <div class="row ">
+                <div class="col s2"></div>
+                <form class="col s8">
+                    <div class="input-field">
+
+                        <input id="idcategoria" name="idcategoria" type="text" class="validate" disabled>
+                        <label for="idcategoria">ID</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+
+                    <div class="input-field">
+
+                        <input id="nombrecat" type="text" class="validate" name="nombrecat">
+                        <label for="nombrecat">Nombre Producto</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="detallecat" type="text" class="validate" name="detallecat">
+                        <label for="detallecat">Descripcion</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+
+
+                    <br>
+                    <div class="row">
+                        <a class="waves-effect waves-light blue btn z-depth-2 center col s6 offset-s3"
+                            name="agregarproducto" id="agregarproducto" type="submit"
+                            onclick="agregarProducto()">Agregar</a> <br> <br>
+
+                    </div>
+                </form>
+                <div class="col s2"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TODO: LISTO agregar modal para editar categoria -->
+
+    <div id="modaleditarcategoria" class="modal">
+        <div class="modal-content">
+            <div class="col s12">
+                <a class="modal-close right"><i class="material-icons">close</i></a>
+            </div>
+            <h4 class="center-align">Editar Categoria </h4>
+
+            <div class="row ">
+                <div class="col s2"></div>
+                <form class="col s8">
+                    <div class="input-field">
+
+                        <input id="idcategoria" name="idcategoria" type="text" class="validate" disabled>
+                        <label for="idcategoria">ID</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+
+                    <div class="input-field">
+
+                        <input id="nombrecat" type="text" class="validate" name="nombrecat">
+                        <label for="nombrecat">Nombre Producto</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+                    <div class="input-field">
+
+                        <input id="detallecat" type="text" class="validate" name="detallecat">
+                        <label for="detallecat">Descripcion</label>
+                        <span class="helper-text" data-error="Mal :(" data-success="Bien! :)"></span>
+                    </div>
+
+
+                    <br>
+                    <div class="row">
+                        <a class="waves-effect waves-light blue btn z-depth-2 center col s6 offset-s3"
+                            name="editarcat" id="editarcat" type="submit"
+                            onclick="editarProducto()">Editar</a> <br> <br>
+
+                    </div>
+                </form>
+                <div class="col s2"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- SIdeNav -->
 
     <div class="container section">
 
@@ -201,74 +530,14 @@
                 </div>
             </li>
             <!-- CATEGORIAS -->
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li>
-                        <a class="collapsible-header">Categorias <i class="material-icons">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="#">Añadir<i class="material-icons green-text">add_circle</i></a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Actualizar<i class="material-icons blue-text">refresh</i></a>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Eliminar<i class="material-icons red-text">delete</i></a>
-                            </ul>
-                        </div>
-                    <li>
-                        <div class="divider"></div>
-                    </li>
-            </li>
+            <li><a class="waves-effect" href="#!" onclick="producto()">Productos</a></li>
             <!-- PRODUCTOS -->
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li>
-                        <a class="collapsible-header">Productos <i class="material-icons">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="#">Añadir<i class="material-icons green-text">add_circle</i></a>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Actualizar<i class="material-icons blue-text">refresh</i></a>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Eliminar<i class="material-icons red-text">delete</i></a>
-                            </ul>
-                    <li>
-                        <div class="divider"></div>
-                    </li>
-            </li>
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li>
-                        <a class="collapsible-header">Usuarios <i class="material-icons">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="#">Añadir<i class="material-icons green-text">add_circle</i></a>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Actualizar<i class="material-icons blue-text">refresh</i></a>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Eliminar<i class="material-icons red-text">delete</i></a>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Listar<i class="material-icons dark-text">list</i></a>
-                            </ul>
+            <li><a class="waves-effect" href="#!" onclick="categoria()">Categorias</a></li>
+            <!-- USUARIOS -->
 
-                        </div>
-
-                    </li>
-
-
-                </ul>
-            </li>
-            </li>
         </ul>
-        </li>
-        </ul>
+
+
 
 
     </div>
@@ -290,6 +559,21 @@
             M.AutoInit();
 
         });
+
+        function categoria() {
+
+            document.getElementById("categorias").style.display = "block";
+
+            document.getElementById("productos").style.display = "none";
+        }
+
+        function producto() {
+
+            document.getElementById("categorias").style.display = "none";
+
+            document.getElementById("productos").style.display = "block";
+        }
+
     </script>
 
 
